@@ -1,0 +1,19 @@
+.work__list {
+  display: flex;
+  justify-content: center;
+}
+.work__list {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+  cursor: pointer;
+  padding-top: 100px;
+  margin-bottom: 56px;
+}
+
+.work__item:not(:last-child) {
+  margin-right: 8px;
+}
