@@ -4,16 +4,6 @@
 @import "./base/common";
 @import "./utils/hidden";
 
-//COMPONENTS
-@import "./components/container";
-@import "./components/logo";
-@import "./components/nav";
-@import "./components/contact";
-@import "./components/btn";
-@import "./components/social-icons";
-@import "./components/subscribe";
-@import "./components/modal";
-
 //LAYOUT
 
 @import "./layout/header";
@@ -27,3 +17,14 @@
 @import "./layout/portfolio";
 @import "./layout/header";
 @import "./layout/header";
+
+//COMPONENTS
+
+@import "./components/logo";
+@import "./components/nav";
+@import "./components/contact";
+@import "./components/btn";
+@import "./components/social-icons";
+@import "./components/subscribe";
+@import "./components/modal";
+@import "./components/container";
