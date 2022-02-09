@@ -1,14 +1,11 @@
 // HEADER
+
 .header-list-contact__link {
-  display: flex;
-  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--additional-color);
-  padding-top: 32px;
-  padding-bottom: 32px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:hover {
@@ -17,38 +14,73 @@
 }
 
 .header-list-contact {
-  display: flex;
-  margin-left: auto;
-  align-items: center;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: auto;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
 }
 .header-link:hover,
 .header-link:focus {
   color: var(--accent);
 }
 .header-list-contact__icon {
-  box-sizing: border-box;
+  display: flex;
+  align-items: center;
   fill: currentColor;
-  margin-right: 10px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     fill: var(--accent);
   }
+  @media screen and (max-width: 767px) {
+    justify-content: center;
+  }
 }
 
-.header-list-contact__item {
-  display: flex;
-  &:not(:last-child) {
-    margin-right: 50px;
+.header-list-contact__item:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 16px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 10px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 30px;
+  }
+}
+.header-list-contact__mail {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 8px;
+  }
+}
+.header-list-contact__tel {
+  margin-right: 10px;
+  width: 10px;
+  height: 16px;
+  fill: currentColor;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 8px;
   }
 }
 
 // FOOTER
 .footer__address {
-  margin-top: 20px;
+  font-style: normal;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .footer__item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 .footer__contact-address {
   font-style: normal;
@@ -56,6 +88,10 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #ffffff;
+  margin-top: 0;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
 }
 .footer__contact {
   font-style: normal;
@@ -63,7 +99,6 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  margin-bottom: 9px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
