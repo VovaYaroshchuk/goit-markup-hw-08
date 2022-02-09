@@ -1,24 +1,36 @@
 .logo-web {
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--accent);
+  @include desk {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 .logo-studio {
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--main-color);
+  @include desk {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 .footer__logo-studio {
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: white;
+  @include desk {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }

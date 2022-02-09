@@ -1,5 +1,8 @@
 .about {
   padding-bottom: 94px;
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
 }
 .about__list {
   display: flex;

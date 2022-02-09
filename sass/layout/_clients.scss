@@ -1,20 +1,36 @@
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include desk {
+    padding: 94px 0;
+  }
 }
 .clients__title {
   font-weight: bold;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  @include desk {
+    font-size: 36px;
+    line-height: 1.16;
+    margin-bottom: 50px;
+  }
 }
 .clienst__list {
   display: flex;
+
+  @media screen and (max-width: 1199px) {
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
 }
 .clienst__list-link {
-  width: 170px;
   height: 92px;
   display: flex;
   justify-content: center;
@@ -33,7 +49,33 @@
 
 .clienst__list-item {
   fill: currentColor;
-  &:not(:last-child) {
-    margin-right: 30px;
+  @media screen and (max-width: 767px) {
+    width: calc((100% - 1 * 30px) / 2);
+
+    &:not(:nth-last-child(-n + 2)) {
+      margin-bottom: 30px;
+    }
+    &:not(:nth-child(2n)) {
+      margin-right: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: calc((100% - 2 * 30px) / 3);
+
+    &:not(:nth-last-child(-n + 3)) {
+      margin-bottom: 30px;
+    }
+    &:not(:nth-child(3n)) {
+      margin-right: 30px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 5 * 30px) / 6);
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 }
