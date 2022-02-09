@@ -38,6 +38,7 @@
 .menu-container {
   &.is-open {
     display: block;
+    height: 100vw;
   }
 
   @media screen and (max-width: 767px) {
