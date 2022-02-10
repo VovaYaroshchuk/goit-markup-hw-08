@@ -6,6 +6,7 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--additional-color);
+
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:hover {
@@ -44,8 +45,8 @@
     fill: var(--accent);
   }
   @media screen and (max-width: 767px) {
-    font-size: 34px;
-    line-height: 40px;
+    font-size: 24px;
+    line-height: 1.16;
   }
   @media screen and (max-width: 767px) {
     justify-content: center;
@@ -54,7 +55,7 @@
 
 .header-list-contact__item:not(:last-child) {
   @media screen and (max-width: 767px) {
-    margin-bottom: 16px;
+    margin-top: 32px;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-bottom: 10px;
@@ -85,6 +86,23 @@
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-right: 8px;
+  }
+}
+
+.header-list-contact__link-tel {
+  @media screen and (max-width: 767px) {
+    font-size: 34px;
+    line-height: 1.17;
+    color: #2196f3;
+    margin-top: 32px;
+  }
+  color: #757575;
+}
+.header-list-contact__link-mail {
+  color: #757575;
+  @media screen and (max-width: 767px) {
+    font-size: 24px;
+    line-height: 1.16;
   }
 }
 
