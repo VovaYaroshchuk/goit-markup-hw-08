@@ -1,17 +1,9 @@
-.subscribe {
-  @media screen and (min-width: 768px) {
-    display: flex;
-    align-items: center;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    flex-direction: column;
-  }
-}
 .subscribe__wrap {
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 450px;
   }
 }
+
 .subscribe__email-label {
   font-weight: bold;
   font-size: 14px;
@@ -52,4 +44,25 @@
 
 .subscribe__item {
   margin-left: 10px;
+}
+.subscribe {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-direction: column;
+  }
+  @media screen and (min-width: 1199px) {
+    align-items: flex-end;
+  }
+}
+.subscribe__title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
 }

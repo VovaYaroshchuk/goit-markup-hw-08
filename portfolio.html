@@ -257,8 +257,8 @@
         </div>
     </section>
 <footer class="footer">
-    <div class="container footer__container">
-        <div class="footer__contact-block">
+    <div class="container footer-blocks">
+        <div class="footer__contact-block footer__block">
             <a class="footer__logo link" href="./index.html" lang="en"> <span class="logo-web">Web</span><span
                     class="footer__logo-studio">Studio</span></a>
             <address class="footer__address">
@@ -274,7 +274,7 @@
                 </ul>
             </address>
         </div>
-        <div class="footer__social-block">
+        <div class="footer__social-block footer__block">
             <h3 class="footer__social-join">присоединяйтесь</h3>
             <ul class="footer__social-icon list">
                 <li class="footer__social-icon-list">
@@ -307,15 +307,18 @@
                 </li>
             </ul>
         </div>
-        <form class="subscribe" action="#">
-            <label class="subscribe__email-label">Подпишитесь на рассылку</label> <br>
-            <input type="email" class="subscribe__input" name="email" placeholder="E-mail">
-            <button type="submit" class="subscribe__btn">Подписаться <svg class="subscribe-item" width="24" height="24">
-                    <use href="./images/icons.svg#icon-icon-send"> </use>
-                </svg></button>
-        </form>
+        <div class="subscribe__wrap footer__block">
+            <b class="subscribe__title">Подпишитесь на рассылку</b>
+            <form class="subscribe" action="#">
+                <input type="email" class="subscribe__input" name="email" placeholder="E-mail">
+                <button type="submit" class="subscribe__btn">Подписаться
+                    <svg class="subscribe-item" width="24" height="24">
+                        <use href="./images/icons.svg#icon-icon-send"> </use>
+                    </svg></button>
+            </form>
+        </div>
     </div>
-
 </footer>
+<script src="./js/menu.js"></script>
 </body>
 </html>

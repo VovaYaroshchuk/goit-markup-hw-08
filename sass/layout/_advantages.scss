@@ -51,7 +51,9 @@
   text-transform: uppercase;
   color: var(--main-color);
   margin-bottom: 10px;
-  text-align: center;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .advantages__post-title {
