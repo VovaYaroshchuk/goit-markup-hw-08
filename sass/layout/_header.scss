@@ -68,6 +68,7 @@
 .menu-social__list {
   padding-left: 40px;
   display: flex;
+  flex-wrap: wrap;
   @media screen and (min-width: 767px) {
     display: none;
   }
